@@ -1,0 +1,28 @@
+http://172.24.248.61/APIMD8/HBAPI/api.ashx?type=20&action=start&station=PLaserMark&pwd=11&nopwd=1&uid=10055944&sn=GCC1L823116600F4
+0||Rotuing检查失败,建议去:Please unhold first,SN is holded,CPTS：试产机头入NPI库，Hold不进入生产车间。,SN:AT210416003637,DSN:
+1||OK
+
+http://172.24.248.61/APIMD8/HBAPI/api.ashx?type=21&action=getinfo&uid=1&pwd=11&json=1&IsReadOnly=Y&sn=GCC1L823116600F4
+{
+	"error": "0",
+	"msg": "",
+	"data": [
+		{
+			"DSN": "GCC1L823116600F4",
+			"PA_WO": "DGSSC210414N3013_ZJ#210ZA87",
+			"FA_PN": "HQ3110AK79000",
+			"PSN": "AT210416003637",
+			"LaserTemplatePath": "Mustang-ARTWORK-Black",
+			"LaserPeriod": "116",
+			"MB": "PCC28A2311540383",
+			"AmazonSetName": "E4F2A-X36",
+			"SHA1": "03057",
+			"MAC": "343EA490127A",
+			"IsRepairVer": "N"
+		}
+	]
+}
+
+http://172.24.248.61/APIMD8/HBAPI/api.ashx?type=35&action=complete&sn=GCC1L823116600F4&station=PLaserMark&uid=10055944&pwd=123&nopwd=1&ToolName=FourInOne&code=0
+0||Rotuing check fail,suggest to:P_DIC,成品退库状态 (WC)
+1|| BSN(GCC1L823116600F4)过站成功，下一站：POBA or POSDownload
